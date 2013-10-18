@@ -1,0 +1,52 @@
+﻿canvas {
+    text-align:center;
+    width:680px;
+    font-family: Arial;
+
+}
+
+
+h4 {
+    text-align: center;
+}
+
+h5 {
+    color: red;
+}
+
+table {
+    border-spacing:0px;
+    text-align: center;
+    font-family: Arial;
+
+}
+
+.noBor {
+    border: hidden;
+    font-weight:bold;
+}
+
+td {
+    border: 1px solid black;
+    text-align:center;
+    min-width:35px;
+    padding:0px;
+
+}
+
+.YCell {
+    background-color: yellow;
+    font-weight:bold;
+}
+
+.noBorY {
+    border: hidden;
+    background-color: yellow;
+    font-weight:bold;
+}
+
+
+
+
+
+

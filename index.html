@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+
+
+<script>
+
+    var num = prompt("Enter number between 5 and 20", 5);
+    console.log(num);
+
+    if (num < 5 || num > 20) {
+        document.writeln("<h5>The valid input is a number between 5 and 20, please refresh your page to start again.");
+    }
+    else {
+
+        document.writeln("<table>");
+        document.writeln("<tr><th colspan = "+num+">Times Table - " + num + "x" + num + "</th></tr>");
+
+
+
+
+        document.writeln("<tr>");
+        document.writeln('<td class="noBor"> </td>');
+
+        for (var TableHead = 1; TableHead <= num; TableHead++) {
+            document.writeln('<td class="noBorY">' + TableHead + '</td>');
+
+
+        }
+        document.writeln("</tr>");
+
+
+
+                for (var y = 1; y <= num; y++) {
+                    document.writeln("<tr>");
+                    document.writeln('<td class="noBorY">' + y + '</td>');
+
+                    for (var x = 1; x <= num; x++) {
+        
+        
+                        if (x == y) {
+                            document.writeln('<td class="YCell">'+ (x * y) +'</td>');
+                        }
+                        else {
+                            document.writeln('<td>'+ (x * y) +'</td>');
+                        }
+
+                    }
+                    document.writeln("</tr>");
+                }
+        
+                document.writeln("</table>");
+                    
+                    
+            }
+        
+
+
+
+</script>
+</body>
+</html>
